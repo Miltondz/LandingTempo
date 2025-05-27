@@ -1,6 +1,6 @@
-# FocusCube | Temporizador Pomodoro con Soporte Chileno
+# FocusCube | Landing Page de Temporizador Pomodoro con Soporte Chileno
 
-FocusCube is a Pomodoro timer web application specifically tailored for users in Chile, offering local support, a 2-year warranty, and localized manuals. It's designed to enhance productivity for office work and study.
+FocusCube is a landing page for a Pomodoro timer web application specifically tailored for users in Chile, offering local support, a 2-year warranty, and localized manuals. It's designed to enhance productivity for office work and study.
 
 ## Features
 
@@ -24,6 +24,33 @@ FocusCube is built with the following technologies:
 *   **React:** A JavaScript library for building user interfaces.
 *   **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript.
 *   **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+
+## Customization
+
+This section explains how to modify different parts of the landing page.
+
+### Changing Images
+
+Images used in the landing page are primarily located in the `src/assets/` directory. To change an image, replace the existing file with your new image, ensuring the filename remains the same.
+
+Some images might also be referenced directly within component files located in `src/components/`. If you replace an image in `src/assets/` and don't see the change reflected, you may need to update the image import or path in the relevant component file (e.g., `src/components/Hero.tsx`, `src/components/Features.tsx`).
+
+### Updating Social Media Links
+
+Social media links, icons, and contact details are typically managed within specific components. Look for these in:
+
+*   `src/components/Footer.tsx`: For links and information usually found in the page footer.
+*   `src/components/Contact.tsx`: For contact forms or direct contact details.
+*   `src/components/WhatsAppButton.tsx`: For the WhatsApp contact button.
+
+Edit these files to update the URLs, text, or icons for your social media profiles.
+
+### Editing Sales Plans (Pricing)
+
+The details of the sales plans, including features, pricing, and descriptions, are displayed by the `Pricing` component. To modify this information:
+
+*   Edit the `src/components/Pricing.tsx` file.
+*   You will likely find the plan details structured as an array of objects or similar data structure within this file. Modify this data to reflect your desired plans.
 
 ## Available Scripts
 
